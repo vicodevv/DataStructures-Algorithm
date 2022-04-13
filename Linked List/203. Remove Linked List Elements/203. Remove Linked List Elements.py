@@ -3,12 +3,12 @@
 #     def __init__(self, val=0, next=None):
 #         self.val = val
 #         self.next = next
-from tkinter.tix import ListNoteBook
+
 from typing import Optional
 
 
 class Solution:
-    def removeElements(self, head: Optional[ListNoteBook], val: int) -> Optional[ListNode]:
+    def removeElements(self, head: Optional[ListNode], val: int) -> Optional[ListNode]:
         dummy = ListNode(next = head)
         prev, curr = dummy, head
         
