@@ -3,12 +3,12 @@
 #     def __init__(self, val=0, next=None):
 #         self.val = val
 #         self.next = next
-from tkinter.tix import ListNoteBook
+
 from typing import Optional
 
 
 class Solution:
-    def reverseList(self, head: Optional[ListNode]) -> Optional[ListNoteBook]:
+    def reverseList(self, head: Optional[ListNode]) -> Optional[ListNode]:
         prev, curr = None, head
         
         while curr: 
