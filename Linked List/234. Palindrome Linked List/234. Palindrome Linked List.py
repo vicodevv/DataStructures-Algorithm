@@ -3,7 +3,7 @@
 #     def __init__(self, val=0, next=None):
 #         self.val = val
 #         self.next = next
-from tkinter.tix import ListNoteBook
+
 from typing import Optional
 
 def reverse(current,prev):
@@ -38,7 +38,7 @@ class Solution:
 
 #This second solution would require extra memory since we're converting the list to an array
 class Solution:
-    def isPalindrome(self, head: Optional[ListNoteBook]) -> bool:
+    def isPalindrome(self, head: Optional[ListNode]) -> bool:
         nums = []
 
         while head:
