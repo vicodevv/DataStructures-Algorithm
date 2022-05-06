@@ -36,3 +36,18 @@ class Solution:
                     queue.append(node.right)
             level += 1
         return level
+
+# Iterative DFS using stack in pre-order manner
+class Solution:
+    def maxDepth(self, root: Optional[TreeNode]) -> int:
+        stack = [[root, 1]]
+        result = 0
+        
+        while stack:
+            node, depth = stack.pop()
+            
+            if node:
+                result = max(result, depth)
+                stack.append([node.left, depth + 1])
+                stack.append([node.right, depth + 1])
+        return result
