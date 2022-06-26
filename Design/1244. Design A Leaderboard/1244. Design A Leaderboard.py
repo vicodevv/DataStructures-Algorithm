@@ -11,7 +11,7 @@ class Leaderboard:
         return sum(map(lambda x:x[1], self.counter.most_common(K)))
 
     def reset(self, playerId: int) -> None:
-        self.counter[playerId] = 0
+        self.counter[playerId] = 0 
 
 
 # Your Leaderboard object will be instantiated and called as such:
