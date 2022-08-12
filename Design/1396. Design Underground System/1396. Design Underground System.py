@@ -36,7 +36,7 @@ class UndergroundSystem:
 # obj.checkOut(id,stationName,t)
 # param_3 = obj.getAverageTime(startStation,endStation)
 
-class UndergroundSystem:
+class UndergroundSystem: 
 
     def __init__(self):
         self.checkInData = {}
