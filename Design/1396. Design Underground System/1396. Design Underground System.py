@@ -41,7 +41,7 @@ class UndergroundSystem:
     def __init__(self):
         self.checkInData = {}
         self.journeyData = {}
-        
+         
     def checkIn(self, id: int, stationName: str, t: int) -> None:
         self.checkInData[id] = (stationName, t)
         
